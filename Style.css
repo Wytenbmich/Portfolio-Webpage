@@ -14,9 +14,14 @@ h4{
 	text-align: center;
 
 }
+.left{grid-area: "left";}
+.right{grid-area: "right";}
+.center{grid-area: "center";}
+.footer{grid-area: "footer";}
 .grid-container
 {
 	display: grid;
-	
+	grid: "left" "center" "right"
+	      "footer"
 }
 
