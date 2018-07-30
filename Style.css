@@ -1,5 +1,22 @@
 h1{
-	color:purple;
+	color:white;
 	text-transform: uppercase;
+	text-align: center;
+}
+body{
+	background-image: url("koko.jpg");
+	background-size: cover;
+	background-blend-mode: lighten;
+
+
+}
+h4{
+	text-align: center;
+
+}
+.grid-container
+{
+	display: grid;
+	
 }
 
