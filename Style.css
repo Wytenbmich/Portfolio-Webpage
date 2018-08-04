@@ -1,27 +1,86 @@
-h1{
+.white_center{
 	color:white;
 	text-transform: uppercase;
 	text-align: center;
-}
-body{
-	background-image: url("koko.jpg");
-	background-size: cover;
-	background-blend-mode: lighten;
 
 
 }
-h4{
-	text-align: center;
-
+h2{
+	position: relative;
+	top:30%;
 }
-.left{grid-area: "left";}
-.right{grid-area: "right";}
-.center{grid-area: "center";}
-.footer{grid-area: "footer";}
-.grid-container
+h1 {
+	position: relative;
+	top:40%;
+}
+
+.nav{
+	grid-area: 1 / 1 / span 1 / span 3;
+	
+}
+
+.left{
+
+	grid-area: 2 / 1 / span 1 / span 1;
+}
+
+.right
+{
+	grid-area: 2 / 3 / span 1 / span 1;
+}
+.center
+{ 
+	grid-area: 2 / 2 / span 1 / span 1;
+}
+.grid-container1
 {
 	display: grid;
-	grid: "left" "center" "right"
-	      "footer"
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-image: url("koko.jpg");
+	background-size: 100% 100%;
+	grid-template-columns: 50px auto 50px;
+	grid-template-rows:50px auto 20px;
+	min-height: 100vh;
+	min-width: 100vh;
 }
+.grid-container2
+{
+	display: grid;
+	background-image: url("koko.jpg");
+	background-size: cover;
+	grid-template-columns: 50px auto 50px;
+	grid-template-rows:50px auto 20px;
+	min-height: 100vh;
+	min-width: 100vh;
+
+}
+.footer{
+	grid-area: 3 / 2 / span 1 / span 1;
+	text-align: center;
+}
+ul{
+	list-style: none;
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+}
+html, body{
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+}
+
+
+/* *{
+ outline: 1px solid red;
+}
+*/
+
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
+*/
 
